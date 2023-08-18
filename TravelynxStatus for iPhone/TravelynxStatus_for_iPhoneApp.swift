@@ -11,7 +11,19 @@ import SwiftUI
 struct TravelynxStatus_for_iPhoneApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
+            TabView {
+                StatusView()
+                    .tabItem {
+                        Image(systemName: "tram.fill")
+                        Text("Status")
+                    }
+                SettingsView()
+                    .tabItem {
+                        Image(systemName: "gearshape.fill")
+                        Text("Settings")
+                    }
+            }
         }
     }
 }
