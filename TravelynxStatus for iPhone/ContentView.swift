@@ -109,7 +109,7 @@ struct StatusView: View {
                 }
                 .padding(.bottom, 20)
             
-                VStack(alignment: .leading, spacing: 5) {
+                VStack(alignment: .leading, spacing: 0) {
                     Text(Status)
                         .italic(true)
                         .font(.system(size: 18))
